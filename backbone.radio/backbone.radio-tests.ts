@@ -1,4 +1,4 @@
-﻿/// <reference path="backbone.radio.d.ts" />
+/// <reference path="backbone.radio.d.ts" />
 /// <reference path="../jquery/jquery.d.ts" />
 
 class MyCommands extends Backbone.Radio.Commands {

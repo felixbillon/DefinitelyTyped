@@ -1,4 +1,4 @@
-﻿/// <reference path="angular-gettext.d.ts" />
+/// <reference path="angular-gettext.d.ts" />
 
 module angular_gettext_tests {
   

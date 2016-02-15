@@ -1,4 +1,4 @@
-ï»¿// Type definitions for fast-stats 0.0.2
+// Type definitions for fast-stats 0.0.2
 // Project: https://github.com/bluesmoon/node-faststats
 // Definitions by: Rogier Schouten <https://github.com/rogierschouten>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
@@ -109,7 +109,7 @@ declare module 'fast-stats' {
 		
 		/**
 		 * Arithmetic Mean
-		 * The arithmetic mean is calculated as the sum of all data points divided by the number of data points. This is useful for data sets that are fairly uniform, following a linear or binomial distribution. Use the amean() method or the `µ()? method to get at it:
+		 * The arithmetic mean is calculated as the sum of all data points divided by the number of data points. This is useful for data sets that are fairly uniform, following a linear or binomial distribution. Use the amean() method or the `)? method to get at it:
 		 */
 		amean(): number;
 				

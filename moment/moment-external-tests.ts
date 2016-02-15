@@ -1,4 +1,4 @@
-﻿/// <reference path="moment.d.ts" />
+/// <reference path="moment.d.ts" />
 
 import moment = require('moment');
 

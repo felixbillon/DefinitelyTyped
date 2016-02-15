@@ -1,4 +1,4 @@
-﻿// Type definitions for Auth0.js
+// Type definitions for Auth0.js
 // Project: http://auth0.com
 // Definitions by: Robert McLaws <https://github.com/advancedrei>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

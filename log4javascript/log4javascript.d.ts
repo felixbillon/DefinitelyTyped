@@ -1,4 +1,4 @@
-﻿// Type definitions for log4javascript v1.4.10
+// Type definitions for log4javascript v1.4.10
 // Project: http://log4javascript.org/
 // Definitions by: Markus Wagner <https://github.com/Ritzlgrmft/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

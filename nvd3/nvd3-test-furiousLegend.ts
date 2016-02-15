@@ -1,4 +1,4 @@
-﻿/// <reference path="nvd3.d.ts" />
+/// <reference path="nvd3.d.ts" />
 module nvd3_test_furiousLegend {
     var width = 500,
         height = 40;

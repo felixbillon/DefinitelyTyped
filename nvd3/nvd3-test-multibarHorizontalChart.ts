@@ -1,4 +1,4 @@
-﻿/// <reference path="nvd3.d.ts" />
+/// <reference path="nvd3.d.ts" />
 module nvd3_test_multibarHorizontalChart {
     var long_short_data = [
         {

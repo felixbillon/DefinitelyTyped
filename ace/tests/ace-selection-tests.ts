@@ -126,7 +126,7 @@ var exports = {
     },
 
     "test: moveCursor word left with umlauts": function () {
-        var session = new AceAjax.EditSession(" Fuß Füße");
+        var session = new AceAjax.EditSession(" FuFe");
 
         var selection = session.getSelection();
         selection.moveCursorTo(0, 9)

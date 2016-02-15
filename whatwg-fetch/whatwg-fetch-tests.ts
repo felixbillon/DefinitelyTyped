@@ -1,4 +1,4 @@
-﻿/// <reference path="whatwg-fetch.d.ts" />
+/// <reference path="whatwg-fetch.d.ts" />
 
 function test_fetchUrlWithOptions() {
 	var headers = new Headers();

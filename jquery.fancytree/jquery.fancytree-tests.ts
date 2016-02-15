@@ -1,4 +1,4 @@
-﻿///<reference path="jquery.fancytree.d.ts" />
+///<reference path="jquery.fancytree.d.ts" />
 
 $("#tree").fancytree({
 	source: [

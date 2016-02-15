@@ -1,4 +1,4 @@
-﻿/// <reference path="nvd3.d.ts" />
+/// <reference path="nvd3.d.ts" />
 module nvd3_test_lineWithFocusChartx2AxisLabel {
 
     nv.addGraph(function () {

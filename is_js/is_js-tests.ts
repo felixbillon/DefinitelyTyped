@@ -1,4 +1,4 @@
-﻿/// <reference path="is_js.d.ts" />
+/// <reference path="is_js.d.ts" />
 
 //#region Type checks
 

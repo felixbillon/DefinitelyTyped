@@ -1,4 +1,4 @@
-﻿/// <reference path="./log4javascript.d.ts" />
+/// <reference path="./log4javascript.d.ts" />
 
 function aSimpleLoggingMessageString() {
 	var log = log4javascript.getDefaultLogger();

@@ -1,4 +1,4 @@
-﻿/// <reference path="nvd3.d.ts" />
+/// <reference path="nvd3.d.ts" />
 module nvd3_test_multiChart {
     //todo resolve stream_layersIssue var testdata = stream_layers(9, 10 + Math.random() * 100, .1).map(function (data, i) {
     //    return {

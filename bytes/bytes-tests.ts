@@ -1,4 +1,4 @@
-﻿/// <reference path="./bytes.d.ts"/>
+/// <reference path="./bytes.d.ts"/>
 
 import bytes = require('bytes');
 

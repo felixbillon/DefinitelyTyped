@@ -1,4 +1,4 @@
-﻿/// <reference path="merge-descriptors.d.ts"/>
+/// <reference path="merge-descriptors.d.ts"/>
 import mixin = require('merge-descriptors');
 
 function testAssertion(condition: boolean, errorMessage: string) {

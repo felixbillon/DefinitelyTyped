@@ -1,4 +1,4 @@
-﻿// Type definitions for jsonwebtoken 0.4.0
+// Type definitions for jsonwebtoken 0.4.0
 // Project: https://github.com/auth0/node-jsonwebtoken
 // Definitions by: Maxime LUCE <https://github.com/SomaticIT>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

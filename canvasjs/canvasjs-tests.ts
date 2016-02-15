@@ -1,4 +1,4 @@
-﻿/// <reference path="canvasjs.d.ts" />
+/// <reference path="canvasjs.d.ts" />
 
 module CanvasJS.Tests {
     // Column Chart

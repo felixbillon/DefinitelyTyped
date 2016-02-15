@@ -1,4 +1,4 @@
-﻿///<reference path="../angularjs/angular.d.ts" />
+///<reference path="../angularjs/angular.d.ts" />
 /// <reference path="./ngprogress-lite.d.ts" />
 
 var app = angular.module('testApp', ['ngProgressLite']);

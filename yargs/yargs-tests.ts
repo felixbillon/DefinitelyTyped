@@ -1,4 +1,4 @@
-﻿// Type definition tests for yargs
+// Type definition tests for yargs
 // Project: https://github.com/chevex/yargs
 // Definitions by: Martin Poelstra <https://github.com/poelstra>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

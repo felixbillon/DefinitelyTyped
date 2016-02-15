@@ -1,4 +1,4 @@
-﻿/// <reference path="twix.d.ts" />
+/// <reference path="twix.d.ts" />
 
 var someMoment = moment("20111031", "YYYYMMDD");
 var otherMoment = moment("20120620", "YYYYMMDD");

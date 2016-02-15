@@ -1,4 +1,4 @@
-﻿/// <reference path="../jquery/jquery.d.ts"/>
+/// <reference path="../jquery/jquery.d.ts"/>
 /// <reference path="jquery.timeago.d.ts"/>
 
 // Basic usage

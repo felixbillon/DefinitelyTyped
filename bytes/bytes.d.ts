@@ -1,4 +1,4 @@
-﻿// Type definitions for bytes v2.1.0
+// Type definitions for bytes v2.1.0
 // Project: https://github.com/visionmedia/bytes.js
 // Definitions by: Zhiyuan Wang <https://github.com/danny8002/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

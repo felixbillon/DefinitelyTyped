@@ -1,4 +1,4 @@
-﻿/// <reference path="./later.d.ts"/>
+/// <reference path="./later.d.ts"/>
 
 
 module LaterTest_DefineSchedule {

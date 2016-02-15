@@ -1,4 +1,4 @@
-﻿// Type definitions for angular-gettext v2.1.0
+// Type definitions for angular-gettext v2.1.0
 // Project: https://angular-gettext.rocketeer.be/
 // Definitions by: Ákos Lukács <https://github.com/AkosLukacs>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

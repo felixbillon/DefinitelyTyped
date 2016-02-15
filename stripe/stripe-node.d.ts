@@ -84,7 +84,7 @@ declare module StripeNode {
             amount: number;
 
             /**
-             * The date the transaction’s net funds will become available in the Stripe balance.
+             * The date the transaction net funds will become available in the Stripe balance.
              */
             available_on: number;
             created: number;
@@ -124,7 +124,7 @@ declare module StripeNode {
             net: number;
 
             /**
-             * If the transaction’s net funds are available in the Stripe balance yet. Either available or pending.
+             * If the transaction net funds are available in the Stripe balance yet. Either available or pending.
              */
             status: string;
 
@@ -390,7 +390,7 @@ declare module StripeNode {
             created: number;
 
             /**
-             * Current balance, if any, being stored on the customer’s account. If negative, the customer has credit to apply to 
+             * Current balance, if any, being stored on the customer account. If negative, the customer has credit to apply to 
              * the next invoice. If positive, the customer has an amount owed that will be added to the next invoice. The balance 
              * does not refer to any unpaid invoices; it solely takes into account amounts that have yet to be successfully applied 
              * to any invoice. This balance is only taken into account for recurring charges.
@@ -408,7 +408,7 @@ declare module StripeNode {
             default_source: string;
 
             /**
-             * Whether or not the latest charge for the customer’s latest invoice has failed
+             * Whether or not the latest charge for the customer latest invoice has failed
              */
             delinquent: boolean;
 
@@ -428,7 +428,7 @@ declare module StripeNode {
             sources?: IList<ICard | bitcoinReceivers.IBitcoinReceiver>;
 
             /**
-             * The customer’s current subscriptions, if any
+             * The customer current subscriptions, if any
              */
             subscriptions: IList<customerSubscriptions.ISubscription>;
         }
@@ -458,7 +458,7 @@ declare module StripeNode {
             livemode: boolean;
 
             /**
-             * Final amount due at this time for this invoice. If the invoice’s total is smaller than the minimum charge 
+             * Final amount due at this time for this invoice. If the invoice total is smaller than the minimum charge 
              * amount, for example, or if there is account credit that can be applied to the invoice, the amount_due may 
              * be 0. If there is a positive starting_balance for the invoice (the customer owes money), the amount_due 
              * will also take that into account. The charge that gets generated for the invoice will be for the amount 
@@ -481,7 +481,7 @@ declare module StripeNode {
             attempted: boolean;
 
             /**
-             * Whether or not the invoice is still trying to collect payment. An invoice is closed if it’s either paid or 
+             * Whether or not the invoice is still trying to collect payment. An invoice is closed if it either paid or 
              * it has been marked closed. A closed invoice will no longer attempt to collect payment.
              */
             closed: boolean;
@@ -503,7 +503,7 @@ declare module StripeNode {
 
             /**
              * Whether or not payment was successfully collected for this invoice. An invoice can be paid (most commonly) 
-             * with a charge or with credit from the customer’s account balance.
+             * with a charge or with credit from the customer account balance.
              */
             paid: boolean;
 
@@ -534,7 +534,7 @@ declare module StripeNode {
             total: number;
 
             /**
-             * The fee in cents that will be applied to the invoice and transferred to the application owner’s 
+             * The fee in cents that will be applied to the invoice and transferred to the application owner 
              * Stripe account when the invoice is paid.
              */
             application_fee: number;
@@ -563,7 +563,7 @@ declare module StripeNode {
             receipt_number: string;
 
             /**
-             * Extra information about an invoice for the customer’s credit card statement.
+             * Extra information about an invoice for the customer credit card statement.
              */
             statement_descriptor: string;
 
@@ -593,7 +593,7 @@ declare module StripeNode {
 
             /**
              * This percentage of the subtotal has been added to the total amount of the invoice, including invoice line 
-             * items and discounts. This field is inherited from the subscription’s tax_percent field, but can be changed 
+             * items and discounts. This field is inherited from the subscription tax_percent field, but can be changed 
              * before the invoice is paid. This field defaults to null.
              */
             tax_percent: number;
@@ -673,7 +673,7 @@ declare module StripeNode {
 
             /**
              * When type is invoiceitem, the subscription that the invoice item pertains to, if any. Left blank when 
-             * type is already subscription, as it’d be redundant with id.
+             * type is already subscription, as it be redundant with id.
              */
             subscription: string;
         }
@@ -731,7 +731,7 @@ declare module StripeNode {
             trial_period_days: number;
 
             /**
-             * Extra information about a charge for the customer’s credit card statement.
+             * Extra information about a charge for the customer credit card statement.
              */
             statement_descriptor: string;
         }
@@ -761,7 +761,7 @@ declare module StripeNode {
             currency: string;
 
             /**
-             * Date the transfer is scheduled to arrive in the bank. This doesn’t factor in delays like weekends or bank holidays.
+             * Date the transfer is scheduled to arrive in the bank. This doesn factor in delays like weekends or bank holidays.
              */
             date: number;
 
@@ -832,7 +832,7 @@ declare module StripeNode {
             source_transaction: string;
 
             /**
-             * Extra information about a transfer to be displayed on the user’s bank statement.
+             * Extra information about a transfer to be displayed on the user bank statement.
              */
             statement_descriptor: string;
         }
@@ -913,7 +913,7 @@ declare module StripeNode {
             description: string;
 
             /**
-             * The customer’s email address, set by the API call that creates the receiver.
+             * The customer email address, set by the API call that creates the receiver.
              */
             email: string;
 
@@ -1016,7 +1016,7 @@ declare module StripeNode {
 
             /**
              * A positive decimal that represents the fee percentage of the subscription invoice amount that will be transferred to 
-             * the application owner’s Stripe account each billing period.
+             * the application owner Stripe account each billing period.
              */
             application_fee_percent: number;
 
@@ -1180,7 +1180,7 @@ declare module StripeNode {
              */
             create(options: {
                 /**
-                 * A positive integer in the smallest currency unit (e.g 100 cents to charge $1.00, or 1 to charge ¥1, a 0-decimal currency) 
+                 * A positive integer in the smallest currency unit (e.g 100 cents to charge $1.00, or 1 to charge , a 0-decimal currency) 
                  * representing how much to charge the card. The minimum amount is $0.50 (or equivalent in charge currency).
                  */
                 amount: number;
@@ -1448,8 +1448,8 @@ declare module StripeNode {
             create(options: {
                 /**
                  * Unique string of your choice that will be used to identify this coupon when applying it a customer. This is often a specific code 
-                 * you’ll give to your customer to use when signing up (e.g. FALL25OFF). If you don’t want to specify a particular code, you can leave 
-                 * the ID blank and we’ll generate a random code for you.
+                 * youl give to your customer to use when signing up (e.g. FALL25OFF). If you don want to specify a particular code, you can leave 
+                 * the ID blank and wel generate a random code for you.
                  */
                 id?: string;
 
@@ -1475,7 +1475,7 @@ declare module StripeNode {
                 duration_in_months?: number;
 
                 /**
-                 * A positive integer specifying the number of times the coupon can be redeemed before it’s no longer valid. For example, you might 
+                 * A positive integer specifying the number of times the coupon can be redeemed before it no longer valid. For example, you might 
                  * have a 50% off coupon that the first 20 readers of your blog can use.
                  */
                 max_redemptions?: number;
@@ -1572,7 +1572,7 @@ declare module StripeNode {
             create(options: {
                 /**
                  * An integer amount in cents that is the starting account balance for your customer. A negative amount represents a credit that 
-                 * will be used before attempting any charges to the customer’s card; a positive amount will be added to the next invoice.
+                 * will be used before attempting any charges to the customer card; a positive amount will be added to the next invoice.
                  */
                 account_balance?: number;
 
@@ -1589,7 +1589,7 @@ declare module StripeNode {
                 description?: string;
 
                 /**
-                 * Customer’s email address. It’s displayed alongside the customer in your dashboard and can be useful for searching and tracking. 
+                 * Customer email address. It displayed alongside the customer in your dashboard and can be useful for searching and tracking. 
                  * This can be unset by updating the value to null and then saving.
                  */
                 email?: string;
@@ -1608,7 +1608,7 @@ declare module StripeNode {
                 plan?: string;
 
                 /**
-                 * The quantity you’d like to apply to the subscription you’re creating (if you pass in a plan). For example, if your plan is 
+                 * The quantity you like to apply to the subscription youe creating (if you pass in a plan). For example, if your plan is 
                  * 10 cents/user/month, and your customer has 5 users, you could pass 5 as the quantity to have the customer charged 50 cents 
                  * (5 x 10 cents) monthly. Defaults to 1 if not set. Only applies when the plan parameter is also provided.
                  */
@@ -1618,7 +1618,7 @@ declare module StripeNode {
                 /**
                  * Unix timestamp representing the end of the trial period the customer will get before being charged. If set, trial_end will 
                  * override the default trial period of the plan the customer is being subscribed to. The special value now can be provided to 
-                 * end the customer’s trial immediately. Only applies when the plan parameter is also provided.
+                 * end the customer trial immediately. Only applies when the plan parameter is also provided.
                  */
                 trial_end?: number;
             }, response: IResponseFn<customers.ICustomer>): void;
@@ -1651,7 +1651,7 @@ declare module StripeNode {
             update(id: string, options: {
                 /**
                  * An integer amount in cents that is the starting account balance for your customer. A negative amount represents a credit that 
-                 * will be used before attempting any charges to the customer’s card; a positive amount will be added to the next invoice.
+                 * will be used before attempting any charges to the customer card; a positive amount will be added to the next invoice.
                  */
                 account_balance?: number;
 
@@ -1668,7 +1668,7 @@ declare module StripeNode {
                 description?: string;
 
                 /**
-                 * Customer’s email address. It’s displayed alongside the customer in your dashboard and can be useful for searching and tracking. 
+                 * Customer email address. It displayed alongside the customer in your dashboard and can be useful for searching and tracking. 
                  * This can be unset by updating the value to null and then saving.
                  */
                 email?: string;
@@ -1687,7 +1687,7 @@ declare module StripeNode {
                 plan?: string;
 
                 /**
-                 * The quantity you’d like to apply to the subscription you’re creating (if you pass in a plan). For example, if your plan is 
+                 * The quantity you like to apply to the subscription youe creating (if you pass in a plan). For example, if your plan is 
                  * 10 cents/user/month, and your customer has 5 users, you could pass 5 as the quantity to have the customer charged 50 cents 
                  * (5 x 10 cents) monthly. Defaults to 1 if not set. Only applies when the plan parameter is also provided.
                  */
@@ -1697,7 +1697,7 @@ declare module StripeNode {
                 /**
                  * Unix timestamp representing the end of the trial period the customer will get before being charged. If set, trial_end will 
                  * override the default trial period of the plan the customer is being subscribed to. The special value now can be provided to 
-                 * end the customer’s trial immediately. Only applies when the plan parameter is also provided.
+                 * end the customer trial immediately. Only applies when the plan parameter is also provided.
                  */
                 trial_end?: number;
             }, response: IResponseFn<customers.ICustomer>): void;
@@ -1735,7 +1735,7 @@ declare module StripeNode {
              */
             createCard(customerId: string, options: {
                 /**
-                 * The source can either be a token, like the ones returned by our Stripe.js, or a dictionary containing a user’s credit card details 
+                 * The source can either be a token, like the ones returned by our Stripe.js, or a dictionary containing a user credit card details 
                  * (with the options shown below). Whenever you create a new card for a customer, Stripe will automatically validate the card.
                  */
                 source?: string | ICard;
@@ -1783,7 +1783,7 @@ declare module StripeNode {
 
                 /**
                  * Two-letter ISO code representing the country of the card. You could use this 
-                 * attribute to get a sense of the international breakdown of cards you’ve collected.
+                 * attribute to get a sense of the international breakdown of cards youe collected.
                  */
                 country?: string;
 
@@ -1879,7 +1879,7 @@ declare module StripeNode {
 
                 /**
                  * A positive decimal (with at most two decimal places) between 1 and 100. This represents the percentage 
-                 * of the subscription invoice subtotal that will be transferred to the application owner’s Stripe account. 
+                 * of the subscription invoice subtotal that will be transferred to the application owner Stripe account. 
                  * The request must be made with an OAuth key in order to set an application fee percentage. For more 
                  * information, see the application fees documentation: https://stripe.com/docs/connect/collecting-fees#subscriptions
                  */
@@ -1981,7 +1981,7 @@ declare module StripeNode {
                 /**
                  * A positive decimal (with at most two decimal places) between 1 and 100 that represents the percentage of the subscription 
                  * invoice amount due each billing period (including any bundled invoice items) that will be transferred to the application 
-                 * owner’s Stripe account. The request must be made with an OAuth key in order to set an application fee percentage . For more 
+                 * owner Stripe account. The request must be made with an OAuth key in order to set an application fee percentage . For more 
                  * information, see the application fees documentation: https://stripe.com/docs/connect/collecting-fees#subscriptions
                  */
                 application_fee_percent?: number;
@@ -2102,7 +2102,7 @@ declare module StripeNode {
                 customer: string;
 
                 /**
-                 * A fee in cents that will be applied to the invoice and transferred to the application owner’s Stripe account. 
+                 * A fee in cents that will be applied to the invoice and transferred to the application owner Stripe account. 
                  * The request must be made with an OAuth key or the Stripe-Account header in order to take an application fee. 
                  * For more information, see the application fees documentation.
                  */
@@ -2111,7 +2111,7 @@ declare module StripeNode {
                 metadata?: IMetadata;
 
                 /**
-                 * Extra information about a charge for the customer’s credit card statement.
+                 * Extra information about a charge for the customer credit card statement.
                  */
                 statement_descriptor?: string;
 
@@ -2220,7 +2220,7 @@ declare module StripeNode {
              */
             update(id: string, options: {
                 /**
-                 * A fee in cents that will be applied to the invoice and transferred to the application owner’s Stripe account. The request 
+                 * A fee in cents that will be applied to the invoice and transferred to the application owner Stripe account. The request 
                  * must be made with an OAuth key or the Stripe-Account header in order to take an application fee. For more information, 
                  * see the application fees documentation: https://stripe.com/docs/connect/collecting-fees#subscriptions
                  */
@@ -2241,7 +2241,7 @@ declare module StripeNode {
                 metadata?: IMetadata;
 
                 /**
-                 * Extra information about a charge for the customer’s credit card statement.
+                 * Extra information about a charge for the customer credit card statement.
                  */
                 statement_descriptor?: string;
 
@@ -2546,7 +2546,7 @@ declare module StripeNode {
 
             /**
              * Date by which evidence must be submitted in order to successfully challenge dispute. Will be null 
-             * if the customer’s bank or credit card company doesn’t allow a response for this particular dispute.
+             * if the customer bank or credit card company doesn allow a response for this particular dispute.
              */
             due_by: number;
 
@@ -2582,11 +2582,11 @@ declare module StripeNode {
         last4: string;
 
         /**
-         * Possible values are new, validated, verified, or errored. A bank account that hasn’t had any activity or validation performed 
-         * is new. If Stripe can determine that the bank account exists, its status will be validated. Note that there often isn’t enough 
+         * Possible values are new, validated, verified, or errored. A bank account that hasn had any activity or validation performed 
+         * is new. If Stripe can determine that the bank account exists, its status will be validated. Note that there often isn enough 
          * information to know (e.g. for smaller credit unions), and the validation is not always run. If the recipient or customer proves 
          * that they own the bank account (via microdeposit or login), the status will be verified. If a transfer sent to this bank account
-         * fails, we’ll set the status to errored and will not continue to send transfers until the bank details are updated.
+         * fails, wel set the status to errored and will not continue to send transfers until the bank details are updated.
          */
         status: string;
 
@@ -2661,7 +2661,7 @@ declare module StripeNode {
         cancellation_policy_disclosure?: string;
 
         /**
-         * A justification for why the customer’s subscription was not canceled.
+         * A justification for why the customer subscription was not canceled.
          */
         cancellation_rebuttal?: string;
 
@@ -2688,7 +2688,7 @@ declare module StripeNode {
         customer_purchase_ip?: string;
 
         /**
-         * (ID of a file upload) A relevant document or contract showing the customer’s signature.
+         * (ID of a file upload) A relevant document or contract showing the customer signature.
          */
         customer_signature?: string;
 
@@ -2790,7 +2790,7 @@ declare module StripeNode {
      * you can attach a unique key to any POST request made to the Stripe API via the Idempotency-Key: <key> header.
      * For example, if a request to create a charge fails due to a network connection error, you can make 
      * a second request with the same key to guarantee that only a single charge is created. 
-     * The creation of the key is completely up to you — we suggest using random strings or UUIDs. 
+     * The creation of the key is completely up to you we suggest using random strings or UUIDs. 
      * We'll always send back the same response for requests made with the same key, even if you make the request 
      * with different request parameters. The keys expire after 24 hours.
      */
@@ -2965,7 +2965,7 @@ declare module StripeNode {
 
         /**
          * Two-letter ISO code representing the country of the card. You could use this 
-         * attribute to get a sense of the international breakdown of cards you’ve collected.
+         * attribute to get a sense of the international breakdown of cards youe collected.
          */
         country: string;
 
@@ -2998,7 +2998,7 @@ declare module StripeNode {
 
         /**
          * Uniquely identifies this particular card number. You can use this attribute to check 
-         * whether two customers who’ve signed up with you are using the same card number, for example.
+         * whether two customers whoe signed up with you are using the same card number, for example.
          */
         fingerprint: string;
     }

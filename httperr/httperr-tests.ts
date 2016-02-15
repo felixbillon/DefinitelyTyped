@@ -1,4 +1,4 @@
-﻿/// <reference path="httperr.d.ts" />
+/// <reference path="httperr.d.ts" />
 import httperr = require('httperr');
 
 

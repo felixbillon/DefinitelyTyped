@@ -1,4 +1,4 @@
-﻿// Type definitions for d3JS cloud layout plugin by Jason Davies
+// Type definitions for d3JS cloud layout plugin by Jason Davies
 // Project: https://github.com/jasondavies/d3-cloud
 // Definitions by: hans windhoff <https://github.com/hansrwindhoff>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

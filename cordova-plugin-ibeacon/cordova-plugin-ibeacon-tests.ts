@@ -1,4 +1,4 @@
-﻿/// <reference path="../cordova/cordova.d.ts" />
+/// <reference path="../cordova/cordova.d.ts" />
 /// <reference path="./cordova-plugin-ibeacon.d.ts" />
 
 function registerDelegates() {

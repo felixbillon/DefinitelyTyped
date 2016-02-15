@@ -1,4 +1,4 @@
-﻿/// <reference path="./depd.d.ts"/>
+/// <reference path="./depd.d.ts"/>
 
 import depd = require('depd');
 

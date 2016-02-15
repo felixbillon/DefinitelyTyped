@@ -1,4 +1,4 @@
-﻿// Type definitions for GSAP v1.16.0
+// Type definitions for GSAP v1.16.0
 // Project: http://greensock.com/
 // Definitions by: VILIC VANE <https://vilic.github.io/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

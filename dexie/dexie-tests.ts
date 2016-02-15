@@ -1,4 +1,4 @@
-﻿/// <reference path="dexie.d.ts" /> 
+/// <reference path="dexie.d.ts" /> 
 
 import Dexie = require("dexie");
 

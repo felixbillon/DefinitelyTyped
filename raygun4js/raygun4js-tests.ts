@@ -1,4 +1,4 @@
-﻿/// <reference path="raygun4js.d.ts"/>
+/// <reference path="raygun4js.d.ts"/>
 
 var client: raygun.RaygunStatic = Raygun.noConflict();
 

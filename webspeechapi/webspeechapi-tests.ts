@@ -1,4 +1,4 @@
-﻿///<reference path="webspeechapi.d.ts" />
+///<reference path="webspeechapi.d.ts" />
 
 /*
 Examples from the spec:

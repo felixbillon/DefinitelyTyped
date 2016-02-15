@@ -1,4 +1,4 @@
-﻿/// <reference path="azure.d.ts" />
+/// <reference path="azure.d.ts" />
 
 
 import Azure = require("azure");

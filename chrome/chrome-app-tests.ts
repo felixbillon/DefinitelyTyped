@@ -1,4 +1,4 @@
-﻿/// <reference path="chrome-app.d.ts" />
+/// <reference path="chrome-app.d.ts" />
 
 import runtime = chrome.app.runtime;
 import cwindow = chrome.app.window;

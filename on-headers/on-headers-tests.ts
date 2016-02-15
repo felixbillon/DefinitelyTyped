@@ -1,4 +1,4 @@
-﻿/// <reference path="on-headers.d.ts"/>
+/// <reference path="on-headers.d.ts"/>
 
 import http = require('http')
 import onHeaders = require('on-headers')

@@ -1,4 +1,4 @@
-﻿/// <reference path="flux.d.ts" />
+/// <reference path="flux.d.ts" />
 ﻿/// <reference path="../react/react.d.ts" />
 
 import flux = require('flux')

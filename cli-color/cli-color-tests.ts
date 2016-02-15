@@ -1,4 +1,4 @@
-﻿/// <reference path="cli-color.d.ts" />
+/// <reference path="cli-color.d.ts" />
 /// <reference path="../node/node.d.ts" />
 
 import clc = require('cli-color');

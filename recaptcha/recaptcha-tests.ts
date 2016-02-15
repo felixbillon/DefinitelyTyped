@@ -1,4 +1,4 @@
-﻿/// <reference path="recaptcha.d.ts"/> 
+/// <reference path="recaptcha.d.ts"/> 
 
 var recaptchaOptions: RecaptchaOptions = {
     theme : 'custom',
